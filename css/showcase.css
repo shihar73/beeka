@@ -181,7 +181,7 @@
 	
 	.move-title {
 		display:table;
-		font-size:68px;
+		font-size:60px;
 		text-align:center;
 		color:#fff;
 		line-height:110px;
@@ -201,8 +201,8 @@
 	}
 	
 	.move-caption.stroked .move-title {
-		color:rgba(255,255,255,0.1);
-		-webkit-text-stroke: 0.015em #fff;
+		/* color:rgba(255,255,255,0.1); */
+		-webkit-text-stroke: 0.025em #fff;
 		margin-bottom:0px;
 	}
 	
@@ -370,7 +370,7 @@
 	
 	.big-title-caption .move-caption.stroked .move-title {
 		color:rgba(255,255,255,1);
-		-webkit-text-stroke: 0.015em #fff;
+		-webkit-text-stroke: 0.025em #fff;
 		margin-bottom:0px;
 		transform: translate3d(0px, 0px, 0px)!important;
 	}
