@@ -1319,32 +1319,52 @@ Function Contact Formular
 		
 	function ContactForm() {	
 	
-		if( $('#contact-formular').length > 0 ){
+		// if( $('#contact-formular').length > 0 ){
 			
-			$('#contactform').submit(function(){
-				var action = $(this).attr('action');
-				$("#message").slideUp(750,function() {
-					$('#message').hide();
-					$('#submit').attr('disabled','disabled');		
-					$.post(action, {
-						name: $('#name').val(),
-						email: $('#email').val(),
-						comments: $('#comments').val()
-					},
-					function(data){
-						document.getElementById('message').innerHTML = data;
-						$('#message').slideDown('slow');
-						$('#contactform img.loader').fadeOut('slow',function(){$(this).remove()});
-						$('#submit').removeAttr('disabled');
-						if(data.match('success') != null) $('#contactform').slideUp('slow');		
-					}
-				);		
-				});		
-				return false;		
-			});		
-		}
-		
-		
+		// 	$('#contactform').submit(function(){
+		// 		var action = $(this).attr('action');
+		// 		$("#message").slideUp(750,function() {
+		// 			$('#message').hide();
+		// 			$('#submit').attr('disabled','disabled');		
+		// 			$.post(action, {
+		// 				name: $('#name').val(),
+		// 				email: $('#email').val(),
+		// 				comments: $('#comments').val()
+		// 			},
+		// 			function(data){
+		// 				document.getElementById('message').innerHTML = data;
+		// 				$('#message').slideDown('slow');
+		// 				$('#contactform img.loader').fadeOut('slow',function(){$(this).remove()});
+		// 				$('#submit').removeAttr('disabled');
+		// 				if(data.match('success') != null) $('#contactform').slideUp('slow');		
+		// 			}
+		// 		);		
+		// 		});		
+		// 		return false;		
+		// 	});		
+		// }
+		// $(document).ready(function(){
+		// 	$("#submit").click(function(){
+		// 	  $("#message").hide();
+		// 	});
+		//   });
+		$("#contactform").submit((e) => {
+			e.preventDefault()
+			$.ajax({
+			  url: "https://script.google.com/macros/s/AKfycbxPZfm-ut-xd_jTxoIE7eGYLXEBuNMFyiqdw_J4rdEuNELwYENaERueRhyAAp_I8v4JfA/exec",
+			  data: $("#contactform").serialize(),
+			  method: "post",
+			  success: function (response) {
+				alert("Form submitted successfully")
+				window.location.reload()
+				//window.location.href="https://google.com"
+			  },
+			  error: function (err) {
+				alert("Something Error")
+		  
+			  }
+			})
+		  })
 		
 		
 
@@ -1855,7 +1875,12 @@ Function Contact Map
 		return false
 	
 	}//End ContactMap
+
 	
+	
+
+
+
 	
 /*--------------------------------------------------
 Function Load Via Ajax

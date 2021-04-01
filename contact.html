@@ -22,6 +22,8 @@
     <link href="style.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    
 </head>
     
@@ -191,17 +193,17 @@
                                 <!-- Contact Formular -->
                                 <div id="contact-formular" class="bigger-form disable-drag">
                                 
-                                    <div id="message"></div>
+                                    <div id="message" class="error_message"></div>
                                 
-                                    <form method="post" action="" name="contactform" id="contactform">                             
+                                    <form  name="contactform" id="contactform">                             
                                         <div class="name-box has-animation" data-delay="100">        
-                                            <input name="name" type="text" id="name" size="30" value="" placeholder="Name"><label class="input_label"></label>
+                                            <input name="name" type="text" id="name" size="30" value="" placeholder="Name" required><label class="input_label"></label>
                                         </div>                                                        
                                         <div class="email-box has-animation" data-delay="150">
-                                            <input name="email" type="text" id="email" size="30" value="" placeholder="E-mail"><label class="input_label"></label>
+                                            <input name="email" type="email" id="email" size="30" value="" placeholder="E-mail" required ><label class="input_label"></label>
                                         </div>                            
                                         <div class="message-box has-animation" data-delay="100">
-                                            <textarea name="comments" cols="40" rows="4" id="comments" placeholder="Message" ></textarea><label class="input_label slow"></label>
+                                            <textarea name="comments" cols="40" rows="4" id="comments" placeholder="Message" required></textarea><label class="input_label slow"></label>
                                         </div>                             
                                         <div class="button-box has-animation" data-delay="100">             
                                             <div class="clapat-button-wrap circle parallax-wrap bigger">
@@ -350,8 +352,7 @@
     <div id="clone-image"></div>
     <div id="rotate-device"></div>
     
-    
-		
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js" ></script>

@@ -999,7 +999,7 @@
 		margin-top:60px;
 	}
 	
-	input[type="text"], input[type="search"], textarea {
+	input[type="text"],input[type="email"], input[type="search"], textarea {
 		color: rgba(0,0,0,1);
 		font-family: 'Poppins', sans-serif;
 		font-size: 14px;
@@ -1021,8 +1021,8 @@
 		border-bottom:1px solid rgba(0,0,0,0.1);
 	}
 	
-	.bigger-form input[type="text"], .bigger-form input[type="search"], .bigger-form textarea {
-		font-size: 48px;
+	.bigger-form input[type="text"],.bigger-form input[type="email"], .bigger-form input[type="search"], .bigger-form textarea {
+		font-size: 30px;
 		font-weight: 500;
 		height: 100px;
 		padding: 0;
@@ -1032,12 +1032,12 @@
 		padding-left:0px;
 	}
 	
-	.light-content input[type="text"], .light-content input[type="search"], .light-content textarea {
+	.light-content input[type="text"],.bigger-form input[type="email"], .light-content input[type="search"], .light-content textarea {
 		color:rgba(255,255,255,1);
 		border-bottom:1px solid rgba(255,255,255,0.3);
 	}
 	
-	.light-content .white-section input[type="text"], .light-content .white-section input[type="search"], .light-content .white-section textarea {
+	.light-content .white-section input[type="text"],.bigger-form input[type="email"], .light-content .white-section input[type="search"], .light-content .white-section textarea {
 		color:rgba(0,0,0,1);
 		border-bottom:1px solid rgba(0,0,0,0.3);
 	}
@@ -1103,7 +1103,7 @@
 		transition: all 0.4s ease-in-out;
 	}
 	
-	input[type="text"]:focus + .input_label, input[type="search"]:focus + .input_label, textarea:focus + .input_label {
+	input[type="email"]:focus + input[type="text"]:focus + .input_label, input[type="search"]:focus + .input_label, textarea:focus + .input_label {
 		width:100%;		
 	}
 	
@@ -1119,6 +1119,18 @@
 		color:#000;
 	}
 	
+	
+	input[type="email"]:focus, textarea:focus {
+		color:#000;
+	}
+	
+	.light-content input[type="email"]:focus, .light-content textarea:focus {
+		color:#fff;
+	}
+	
+	.light-content .white-section input[type="email"]:focus, .light-content .white-section textarea:focus {
+		color:#000;
+	}
 	textarea {
 		resize:none;
 		margin-bottom:0;
@@ -1399,7 +1411,7 @@
 		height:60px;
 	}
 	
-	input[type="text"], textarea {
+	input[type="text"],input[type="elmail"], textarea {
     	font-size: 14px;
 	}
 	
