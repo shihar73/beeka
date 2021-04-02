@@ -19,6 +19,7 @@
 	}
 	
 	#hero.has-image {
+		background-color: rgba(0, 0, 0, 0.356);
 		z-index:2;
 		height:100vh;
 		overflow:hidden;
