@@ -800,7 +800,7 @@ Primary use:	Showcase Portfolio
 	}
 	
 	.vc_row.large {
-		max-width: 1580px;
+		max-width: 1580px;	
 	}
 	
 	.vc_row.full {
@@ -3401,5 +3401,16 @@ Primary use:	Showcase Portfolio
     
 	#rotate-device {
 		display:block;
+	}
+}
+
+.x2-img{
+	padding-bottom: 10rem;
+}
+
+@media (max-width:667px) {
+	
+	.x2-img{
+		padding-bottom: 5rem;
 	}
 }

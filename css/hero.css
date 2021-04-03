@@ -606,10 +606,7 @@
 	.next-page-title {
 		padding: 180px 30px 140px 30px;
 	}
-	.x2-img{
-		padding-bottom: 5rem;
-	}
-	
+
 }
 
 @media only screen and (max-width: 479px) {
@@ -629,9 +626,7 @@
 	.next-page-title {
 		padding: 140px 20px 100px 20px;
 	}
-	.x2-img{
-		padding-bottom: 5rem;
-	}
+
 		
 }			
 	
